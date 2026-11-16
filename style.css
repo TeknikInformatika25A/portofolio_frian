@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: white;
+    color: #17243b;
+}
+
+#frian_header {
+    background: white;
+    padding: 15px 6%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.frian_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frian_nav h2 {
+    color: #2464ad;
+    font-size: 20px;
+}
+
+.frian_menu {
+    display: flex;
+    gap: 30px;
+}
+
+.frian_menu a {
+    text-decoration: none;
+    color: #17243b;
+    font-size: 14px;
+}
+
+.frian_menu a:hover {
+    color: #2464ad;
+}
+
+.frian_home {
+    background: linear-gradient(110deg, #edf4ff, #d9e9ff);
+    padding: 35px 6%;
+    min-height: 310px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.frian_intro {
+    width: 55%;
+}
+
+.frian_intro h1 {
+    font-size: 38px;
+    margin: 5px 0;
+    color: #17243b;
+}
+
+.frian_intro h1 span {
+    color: #2672ce;
+}
+
+.frian_intro h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.frian_description {
+    font-size: 13px;
+    line-height: 1.6;
+    max-width: 450px;
+    margin-bottom: 20px;
+}
+
+.frian_btn {
+    display: inline-block;
+    background: #2464ad;
+    color: white;
+    padding: 10px 17px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.frian_btn2 {
+    background: white;
+    color: #2464ad;
+    border: 1px solid #2464ad;
+}
+
+.frian_hero_image {
+    width: 40%;
+    height: 230px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frian_laptop {
+    width: 250px;
+    position: relative;
+    z-index: 2;
+    transform: rotate(-5deg);
+}
+
+.frian_laptop_screen {
+    height: 155px;
+    background: linear-gradient(135deg, #142d50, #3269a9);
+    border: 9px solid #26364c;
+    border-radius: 10px;
+    color: #63b4ff;
+    font-size: 55px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.frian_laptop_base {
+    width: 115%;
+    height: 12px;
+    background: #8d9db1;
+    margin-left: -7%;
+    border-radius: 3px 3px 12px 12px;
+}
+
+.frian_plant {
+    position: absolute;
+    right: -5px;
+    bottom: 15px;
+    font-size: 65px;
+}
+
+.frian_about {
+    padding: 25px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.frian_about_text {
+    width: 75%;
+}
+
+.frian_about h2,
+.frian_skills_section h2,
+.frian_projects_section h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #17243b;
+}
+
+.frian_about h2::after,
+.frian_skills_section h2::after,
+.frian_projects_section h2::after {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    background: #2464ad;
+    margin-top: 5px;
+}
+
+.frian_about_text p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #43516a;
+}
+
+.frian_information {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    font-size: 11px;
+}
+
+.frian_photo {
+    width: 100px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 8px;
+    flex-shrink: 0;
+    background: #dce8f8;
+}
+
+.frian_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.frian_skills_section {
+    padding: 5px 6% 25px;
+}
+
+.frian_skills {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.frian_skill {
+    background: #f1f5fa;
+    border: 1px solid #e2e9f2;
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.frian_skill:hover {
+    background: #dceaff;
+    transform: translateY(-3px);
+}
+
+.frian_projects_section {
+    padding: 5px 6% 30px;
+}
+
+.frian_projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.frian_project_card {
+    border: 1px solid #e0e6ef;
+    border-radius: 7px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+}
+
+.frian_project_card img {
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    display: block;
+}
+
+.frian_project_info {
+    padding: 9px;
+}
+
+.frian_project_info h3 {
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.frian_project_info p {
+    font-size: 11px;
+    color: #66748a;
+    min-height: 30px;
+}
+
+.frian_project_info a {
+    display: inline-block;
+    margin-top: 7px;
+    font-size: 11px;
+    color: #2464ad;
+    text-decoration: none;
+}
+
+#frian_footer {
+    background: #172944;
+    color: white;
+    padding: 18px 6% 10px;
+}
+
+.frian_footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.frian_footer_content h3 {
+    font-size: 18px;
+}
+
+.frian_footer_content h3 span {
+    color: #63a9f5;
+}
+
+.frian_footer_content p {
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.frian_contact {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.frian_contact p {
+    font-size: 11px;
+}
+
+#frian_footer hr {
+    margin: 15px 0 8px;
+    border: 0;
+    border-top: 1px solid #52647d;
+}
+
+.frian_copyright {
+    font-size: 10px;
+    color: #cbd5e1;
+}
+
+@media screen and (max-width: 768px) {
+
+    .frian_nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .frian_menu {
+        gap: 18px;
+    }
+
+    .frian_home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .frian_intro {
+        width: 100%;
+    }
+
+    .frian_intro h1 {
+        font-size: 30px;
+    }
+
+    .frian_hero_image {
+        width: 100%;
+    }
+
+    .frian_about {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .frian_about_text {
+        width: 100%;
+    }
+
+    .frian_photo {
+        align-self: center;
+    }
+
+    .frian_skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .frian_projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .frian_footer_content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .frian_menu {
+        gap: 12px;
+    }
+
+    .frian_menu a {
+        font-size: 12px;
+    }
+
+    .frian_projects {
+        grid-template-columns: 1fr;
+    }
+
+}
